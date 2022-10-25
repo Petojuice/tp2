@@ -1,0 +1,31 @@
+import random
+
+nombre = random.randint(0,100)
+appreciation = "?"
+retryy = ""
+jouer = True
+
+
+def jeuxdevinette():
+
+
+while jouer:
+    var = input("Entrez un nombre")
+    var = int(var)
+    if var < nombre :
+        appreciation = "trop bas"
+        print(var, appreciation)
+    else :
+        appreciation = "trop haut"
+        print(var, appreciation)
+    if var == nombre:
+        appreciation = "bravo !"
+        print(var, appreciation)
+
+
+    retryy = input("bravo, voulez vous recommencer o/n!:")
+    if retryy == "n":
+        print('au revoir')
+        jouer = False
+        elif retryy == "o":
+            jeuxdevinette()
