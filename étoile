@@ -1,0 +1,7 @@
+#creer par peter latinovic
+
+import random
+nombre = int(input('combien de rangées détoiles voulez vous?'))
+for i in range(nombre + 1, 0, -1):
+    print('*'*i)
+    #le code marche sur idle mais il y a une erreur sur python charm
